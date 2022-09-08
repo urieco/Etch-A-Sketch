@@ -1,14 +1,15 @@
 Goal: A browser version of something between a sketchpad and an Etch-A-Sketch (The Odin Project's Assignment).
 
 General Outline:
-*Finished: 
+
+**Finished**: 
 - Make a drawing area with 16x16 grid of square divs (Using JS and Flexbox instead of manually placing them). 
     + Use for... loop to generate 256 squares. 
 
 - Set up a "hover" effect ("mouseenter") so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail trhough your grid like a pen would. 
-    + Later on, set it up with a "click" effect instead to accurately draw out what you have in mind. The "hover" will be there to help the user determine where they are currently in the drawing board - a tracking tool.  
+    + Later on, set it up with a "click" effect instead, to accurately draw out what you have in mind. The "hover" will be there to help the user determine where they are currently in the drawing board - a tracking tool.  
 
-*To-do:
+**To-do**:
 - Add a button at the top of the page that will send the user a popup asking for the number of squares per side for the new grid. 
     + Popup using prompt() should be replaced with input field. 
     + Set the limit the user input to a maximum of 100 (and no negative value or non-integer)
