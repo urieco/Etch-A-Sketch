@@ -1,30 +1,38 @@
 * {
     box-sizing: border-box;
 }
+
 .user-input {
     margin-bottom: 2em;
     display: flex;
 }
+
 #board-side {
     font-size: 25px;
     text-align: center;
 }
+
 #select-button,
-#remove-button {
+#randomize-color,
+#shades-of-black {
     margin-left: 1em;
     padding: 0 1em;
-    border: none;
+    border: 1px solid orange;
     border-radius: 5%;
 }
+
 #warning {
     color: red;
     margin: 10px;
 }
+
 .sketchpad {
     display: flex;
 }
+
 .drawing-board {
-    min-width: 970px; /*border-width takes the content space*/
+    min-width: 970px;
+    /*border-width takes the content space*/
     min-height: 970px;
     max-width: 970px;
     max-height: 970px;
@@ -33,16 +41,32 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+:root {
+    --squarewidth: 60px;
+    --squareheight: 60px;
+}
+
 .drawing-square {
-    width: 60px;
-    height: 60px;
+    width: var(--squarewidth);
+    height: var(--squareheight);
     border: 1px solid gray;
     margin: 0;
     flex: 0 0 auto;
 }
+
 .color-black {
     background-color: black;
 }
+
+.selected {
+    transform: scale(1.1);
+    background-color: #ffc600;
+    opacity: 0.8;
+    border-color: #ffc600;
+    box-shadow: 3px 3px 3px #ffc600;
+}
+
 .hidden {
     display: none;
 }
